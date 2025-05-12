@@ -1,0 +1,70 @@
+.card-shadow {
+  box-shadow: 12px 12px 17px 0px #aaa;
+}
+
+.slideDown {
+  animation: slideDown 0.2s linear both;
+  background: linear-gradient(45deg, transparent 50%, #99a1af 0);
+}
+
+.slideUp {
+  animation: slideUp 0.2s linear both;
+  background: linear-gradient(45deg, transparent 50%, #99a1af 0);
+}
+
+.slideListDown {
+  animation: slideListDown 0.2s linear both;
+}
+
+.slideListUp {
+  animation: slideListUp 0.2s linear both;
+}
+
+@keyframes slideDown {
+  0% {
+    visibility: hidden;
+    height: 0;
+  }
+  100% {
+    visibility: visible;
+    height: 20px;
+  }
+}
+
+
+@keyframes slideUp {
+  from {
+    visibility: visible;
+    height: 20px;
+  }
+
+  to {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+@keyframes slideListDown {
+    0% {
+      visibility: hidden;
+      height: 0;
+    }
+    100% {
+      visibility: visible;
+      height: 200px;
+      margin: 20px 0;
+    }
+  }
+  
+  @keyframes slideListUp {
+    from {
+      visibility: visible;
+      height: 200px;
+      margin: 20px 0;
+    }
+  
+    to {
+      visibility: hidden;
+      height: 0;
+    }
+  }
