@@ -1,0 +1,33 @@
+.slideListDown {
+  animation: slideListDown 0.5s ease both;
+}
+
+.slideListUp {
+  animation: slideListUp 0.5s ease both;
+}
+
+@keyframes slideListDown {
+  0% {
+    visibility: hidden;
+    height: 0;
+  }
+
+  100% {
+    visibility: visible;
+    height: 200px;
+    margin: 20px 0 0 0;
+  }
+}
+
+@keyframes slideListUp {
+  from {
+    visibility: visible;
+    height: 200px;
+    margin: 20px 0 0 0;
+  }
+
+  to {
+    visibility: hidden;
+    height: 0;
+  }
+}

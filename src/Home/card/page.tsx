@@ -41,22 +41,22 @@ export default function CardPage() {
             111
           </div>
         </div>
-        {isLocked ? (
+        {/* {isLocked ? (
           //   <div className="h-[200px] mt-10 flex flex-col justify-between">
           <div className="h-[200px] flex flex-col justify-between slideListDown">
-            <ListPage />
-            <div className="w-full bg-linear-to-r from-gray-200 to-gray-400">
-              123
-            </div>
+            <ListPage isLocked={isLocked} />
           </div>
         ) : (
           <div className="h-[200px] flex flex-col justify-between slideListUp">
-            <ListPage />
-            <div className="w-full bg-linear-to-r from-gray-200 to-gray-400">
-              123
-            </div>
+            <ListPage isLocked={isLocked} />
           </div>
-        )}
+        )} */}
+
+        <ListPage isLocked={isLocked} />
+
+        <div className="w-full bg-linear-to-r from-gray-200 to-gray-400">
+          123
+        </div>
       </div>
     </div>
   );
